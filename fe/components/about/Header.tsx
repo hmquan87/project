@@ -58,8 +58,8 @@ const items: MenuProps['items'] = [
 
 export const Headers = () => {
     return (
-        <div className=" w-full h-[80px] fixed top-0 bg-white z-99">
-            <div className='flex  justify-between px-72 items-center h-full'>
+        <div className="w-full h-[65px] fixed top-0 bg-white z-99 shadow">
+            <div className='flex justify-between px-72 items-center h-full'>
                 <div className="items-center">
                     <Image
                         width={80}

@@ -4,11 +4,11 @@ import { Body1 } from "@/components/about/body1";
 
 const About: React.FC = () => {
     return (
-        <div className="absolute">
-            <div className="relative">
+        <div className="">
+            <div className="">
                 <Headers />
             </div>
-            <div className="relative">
+            <div className="px-[60px]">
                 <Body1 />
             </div>
         </div>
