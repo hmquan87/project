@@ -3,7 +3,7 @@ import Image from "next/image"
 import { FiPhoneCall } from "react-icons/fi";
 import appStore from '../../public/img/header/App-Store.svg'
 import chPlay from '../../public/img/header/Play-Store.svg'
-import vn from '../../public/img/header/image3.png'
+import vn from '../../public/img/covn.png'
 import type { MenuProps } from 'antd'
 import { Button, Dropdown } from 'antd'
 
@@ -16,7 +16,9 @@ const items: MenuProps['items'] = [
                     <Image
                         width={40}
                         src={vn}
-                        alt="" />
+                        alt=""
+                    
+                    />
                 </div>
                 <div className="ml-4">
                     Việt Nam
@@ -58,7 +60,7 @@ const items: MenuProps['items'] = [
 
 export const Headers = () => {
     return (
-        <div className="w-full h-[65px] fixed top-0 bg-white z-99 shadow">
+        <div className="w-full h-[65px] fixed top-0 bg-white z-50 shadow">
             <div className='flex justify-between px-72 items-center h-full'>
                 <div className="items-center">
                     <Image
@@ -91,7 +93,7 @@ export const Headers = () => {
                         </Button>
                     </div>
                     <div className='flex items-center gap-4'>
-                        <div>
+                        <div className='text-[#0070FF]'>
                             <FiPhoneCall />
                         </div>
                         <div className='flex justify-center text-[13px] font-semibold'>

@@ -1,0 +1,19 @@
+
+.custom :global(.ant-collapse-borderless) {
+    row-gap: 1em !important;
+    box-shadow: 0 1px rgba(155, 155, 155, 0.342);
+    background: white;
+}
+
+.custom :global(.ant-collapse-item) {
+    box-shadow: 0 1px rgba(155, 155, 155, 0.342);
+    background: white;
+    border-radius: 0.3rem;
+
+}
+
+
+.custom :global(.ant-collapse-header) {
+    align-items: center !important;
+
+}

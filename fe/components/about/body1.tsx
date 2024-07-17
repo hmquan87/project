@@ -2,7 +2,8 @@
 import { Button, ConfigProvider } from "antd";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
-
+import Image from 'next/image'
+import img from '@/public/img/image-section-one.png'
 
 export const Body1 = () => {
     return (
@@ -63,8 +64,13 @@ export const Body1 = () => {
                     </Button>
                 </span>
             </div>
-            <div>
-                 <Ima
+            <div className="flex justify-center">
+                <Image
+                    width={1400}
+                    src={img}
+                    alt=""
+                // className="hover:scale-105 transition-transform duration-300 ease-in-out"
+                />
             </div>
         </div>
     );
