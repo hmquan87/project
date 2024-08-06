@@ -1,15 +1,15 @@
 import axios from "axios";
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { register } from "module";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+
 import { message } from "antd";
 
 
 interface Register {
-    fullName: string
-    username: string
-    email: string
-    password: string
-    againPW: string
+    fullName: string;
+    username: string;
+    password: string;
+    email: string;
+    confirmPass: string;
 }
 
 interface VerifyOtp {
@@ -24,8 +24,8 @@ const initialState: VerifyOtp = {
 export const registerAction = createAsyncThunk(
     'register',
     async (values: Register) => {
-        const { fullName, username, email, password, againPW } = values;
-        if (password === againPW) {
+        const { fullName, username, email, password, confirmPass } = values;
+        if (password === confirmPass) {
             try {
                 const res = await axios.post('https://dev.mys.tinasoft.com.vn/api/v1/auth/register',
                     {

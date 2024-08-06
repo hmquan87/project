@@ -1,17 +1,9 @@
-"use client"
-
-import { useRouter } from "next/navigation"
-import { useEffect } from "react";
+// "use client"
 
 
-const Home = () => {
+// const Home = () => {
 
-  const route = useRouter();
 
-  useEffect(() => {
-    route.push('/about')
-  }, [])
-  return null;
-}
+// }
 
-export default Home;
+// export default Home;

@@ -1,3 +1,5 @@
+'use client';
+
 import logo from '../../public/img/header/logo.svg'
 import Image from "next/image"
 import { FiPhoneCall } from "react-icons/fi";
@@ -6,6 +8,7 @@ import chPlay from '../../public/img/header/Play-Store.svg'
 import vn from '../../public/img/covn.png'
 import type { MenuProps } from 'antd'
 import { Button, Dropdown } from 'antd'
+import { useRouter } from 'next/navigation';
 
 const items: MenuProps['items'] = [
     {
@@ -17,7 +20,7 @@ const items: MenuProps['items'] = [
                         width={40}
                         src={vn}
                         alt=""
-                    
+
                     />
                 </div>
                 <div className="ml-4">
@@ -59,6 +62,10 @@ const items: MenuProps['items'] = [
 
 
 export const Headers = () => {
+
+    const router = useRouter()
+
+
     return (
         <div className="w-full h-[65px] fixed top-0 bg-white z-50 shadow">
             <div className='flex justify-between px-72 items-center h-full'>
@@ -88,6 +95,8 @@ export const Headers = () => {
                         <Button
                             type='primary'
                             className='text-[14px] font-semibold'
+                            onClick={() => router.push('/login')}
+
                         >
                             Trải nghiệm
                         </Button>

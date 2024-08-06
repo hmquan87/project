@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import contact from '@/public/img/contact.png'
 import { Form, Button, Input, message } from 'antd';
 import type { FormProps } from 'antd'
@@ -38,7 +39,7 @@ export const Body7 = () => {
                 />
             </div>
             <div className=''>
-                <span className='text-[48px] font-bold'>Liên hệ với chúng tôi</span>
+                <p className='text-[48px] font-bold pb-[5%]'>Liên hệ với chúng tôi</p>
                 <Form
                     form={form}
                     name='contact'
@@ -81,8 +82,17 @@ export const Body7 = () => {
                             autoSize={{ minRows: 5, maxRows: 5 }}
                             placeholder='Lời nhắn*'
                             // className='w-[60vh]'
-                            style={{width:'90vh'}}
+                            style={{ width: '90vh' }}
                         />
+                    </Form.Item>
+                    <Form.Item>
+                        <Button
+                            type='primary'
+                            htmlType='submit'
+                            className='h-[55px] px-[9%] font-semibold rounded-2xl'
+                        >
+                            Gửi tin nhắn
+                        </Button>
                     </Form.Item>
                 </Form>
             </div>

@@ -1,3 +1,5 @@
+'use client';
+
 
 import img from '@/public/img/image2.png'
 import { Button } from 'antd';
@@ -10,10 +12,13 @@ import img4 from '@/public/img/image4.png';
 import img5 from '@/public/img/image.png'
 import { FaStar } from "react-icons/fa";
 
+interface RefType {
+    refBody4: React.RefObject<HTMLDivElement>
+}
 
-export const Body4 = () => {
+export const Body4: React.FC<RefType> = ({refBody4}) => {
     return (
-        <div className='grid gap-y-44'>
+        <div className=''>
             <div className='flex gap-x-20 px-40' >
                 <div className=''>
                     <p className='mb-10 text-[40px] font-bold text-[#001E4D]'>Chính sách về quyền riêng tư</p>
@@ -43,7 +48,7 @@ export const Body4 = () => {
                     </Button>
 
                 </div>
-                <div>
+                <div >
                     <Image
                         width={750}
                         src={img}
@@ -51,7 +56,10 @@ export const Body4 = () => {
                     />
                 </div>
             </div >
-            <div className=''>
+            <div ref={refBody4}>
+
+            </div>
+            <div className='pt-[10%] pb-[15%]' ref={ refBody4}>
                 <div className='bg-[length:140vh_55vh] bg-no-repeat bg-center h-[55vh] flex flex-row justify-center px-[5%]' style={{ backgroundImage: "url('/img/background-seven.eaa79340.png')" }}>
                     <div className='basis-2/3 flex justify-center'>
                         <div className='flex flex-col w-[75%] pt-[10%] text-white ml-[-5%]'>

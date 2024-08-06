@@ -1,0 +1,22 @@
+.custom :global(.ant-menu-item) {
+  padding-left: 15px !important;
+  position: relative;
+}
+
+
+.customSub :global(.ant-menu-submenu-title) {
+  height: 80px !important;
+  padding-left: 20px !important;
+}
+.customSub :global(.ant-menu-submenu-title .ant-menu-item-icon) {
+  font-size: 40px;
+  background: red;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

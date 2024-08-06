@@ -1,0 +1,17 @@
+
+
+.customTabs :global(.ant-tabs-nav-wrap){
+    display: flex !important;
+    justify-content: space-around !important;
+    &.ant-tabs-nav-list{
+    column-gap: 4rem !important;
+
+    }
+}
+
+.customTabs :global(.ant-tabs-nav-list){
+    
+    column-gap: 0.25rem !important;
+
+    
+}
